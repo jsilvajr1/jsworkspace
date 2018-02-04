@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow');
+
 @import "bootstrap";
 
 .clear {
@@ -49,4 +51,22 @@ hr {
   clear: both
 }
 
+h1 {
+  font-family: 'PT Sans Narrow', sans-serif;
+  }
+
+h2 {
+  font-family: 'PT Sans Narrow', sans-serif;
+  }
+.next-quote {
+  color:#ED0716
+}   
+.footer-blurb {
+ font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+  font-style: italic;
+  text-align: right;
+  font-size: 10px;
+      }
+  
+  
 
