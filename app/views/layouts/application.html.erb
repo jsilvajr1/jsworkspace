@@ -25,17 +25,20 @@
       </div>   
       
       
-      <div class="col-4 slogan">
+      <div class="col-sm-4 hidden-xs-down slogan">
         You Know You Are From Chicago When... 
-        
-      </div>
+        </div>
       
       
-      <div class="col-5 links">
+      
+      <div class="col-10 offset-1 offset-sm-0 col-sm-5 links">
        <%= link_to 'Contribute', '#', data: {toggle: 'modal', target: '#myModal'} %>
+        &nbsp;&nbsp;
         <%= link_to 'About', about_path %>
-       
-      </div>
+       </div>
+      
+      
+      
       
     </header>
     
@@ -56,8 +59,9 @@
     <%= simple_form_for Quote.new do |f| %>
       <div class="modal-body">
          
-          <%= f.input :saying %>
-          <%= f.input :author %>
+          <%= f.input :saying, label: "what is the saying you want to add?", placeholder: "Growing up, you were weirdly biased against kids from other suburbs" %>
+        <br />
+          <%= f.input :author, label: "who is the author of this quote?", placeholder:"thrillist" %>
        </div>
     
     
@@ -78,9 +82,7 @@
     </div>
   
   <div class= "footer">
-    
-    
-    <div class="container">
+  <div class="container">
       
       <% if flash[:error].present? %>
         <div class="col-10 offset-1 alert alert-danger">
@@ -89,12 +91,14 @@
     <% end %> 
     <%= yield %>  
       </div>
+    
+    
       <div class="row">
-        <div class="col-6">
+        <div class="col-12 col-sm-6">
          <%= link_to "This isn't enough, I need more", root_path, class: 'next-quote' %>
       </div>
         
-      <div class="col-6 footer blurb">
+      <div class="col-12 col-sm-6 footer blurb">
         Proudly developed in Chicago, Il <a href="http://thefirehoseproject.com">by Jorge Silva</a><br />
         Want to build your own Splurty Web App - <a href="http://thefirehoseproject.com">Learn how to code here</a>
       </div>
